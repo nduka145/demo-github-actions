@@ -1,7 +1,7 @@
 provider "aws" {
   region     = "us-east-1"
-  access_key = "$secrets.AWS_SECRET_ACCESS_KEY"
-  secret_key = "$secrets.AWS_ACCESS_KEY_ID"
+  access_key = "$secrets.access_key"
+  secret_key = "$secrets.secret_key"
 }
 
 # Create a VPC

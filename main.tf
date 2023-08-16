@@ -1,5 +1,13 @@
 provider "aws" {
   region     = "us-east-1"
+  default_tags {
+    tags = {
+      group        = "accounting"
+      portfolio    = "DEVOPS"
+      businessunit = "school"
+      source       = "nduka145/demo-github-actions"
+    }
+  }
 }
 terraform {
   backend "s3" {
